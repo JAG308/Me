@@ -12,6 +12,7 @@
           {
             "name": "animal_id",
             "type": "integer"
+            'description":
           },
           {
             "name": "animal_project_code",
