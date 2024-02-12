@@ -11,12 +11,13 @@
         "fields": [
           {
             "name": "animal_id",
-            "type": "integer"
-            'description":
+            "type": "integer",
+            "description": "Foreign Key linked to the Animal_ID"
           },
           {
             "name": "animal_project_code",
-            "type": "string"
+            "type": "string",
+            "description": "Code of the animal project linked to this detection"
           },
           {
             "name": "tag_serial_number",
@@ -40,143 +41,178 @@
           },
           {
             "name": "scientific_name",
-            "type": "string"
+            "type": "string",
+            "description": "Scientific name of animal that carries the tag"
           },
           {
             "name": "common_name",
-            "type": "string"
+            "type": "string",
+            "description": "The species' common English name"
           },
           {
             "name": "aphia_id",
-            "type": "integer"
+            "type": "integer",
+            "description": "The Aphia ID linked to the scientific name. The Aphia ID can be found at http://www.marinespecies.org/aphia.php?p=webservice"
           },
           {
             "name": "animal_label",
-            "type": "string"
+            "type": "string",
+            "description": "Identification code that uniquely identifies each animal, as specified by the researcher"
           },
           {
             "name": "animal_nickname",
-            "type": "string"
+            "type": "string",
+            "description": "Nickname given to the tagged animal"
           },
           {
             "name": "tagger",
-            "type": "string"
+            "type": "string",
+            "description": "Person conducting tagging"
           },
           {
             "name": "capture_date_time",
-            "type": "datetime"
+            "type": "datetime",
+            "description": "Date and time that animal was caught, in 24h UTC. Datetime fields should follow the ISO-8601 format"
           },
           {
             "name": "capture_location",
-            "type": "string"
+            "type": "string",
+            "description": "Name of capture location. Please refer to a specific nearby point of land, town, island, or body of water that uniquely identifies this tagging location. Okay to leave blank if same as release location"
           },
           {
             "name": "capture_latitude",
-            "type": "number"
+            "type": "number",
+            "description": "Latitude of capture location. Leave blank if same as release location. Note: in the southern hemisphere all latitudes must be negative"
           },
           {
             "name": "capture_longitude",
-            "type": "number"
+            "type": "number",
+            "description": "Longitude of capture location. Leave blank if same as release location. Note: in the western hemisphere all longitudes must be negative"
           },
           {
             "name": "capture_method",
-            "type": "string"
+            "type": "string",
+            "description": "Name of the method and materials used to capture animal"
           },
           {
             "name": "capture_depth",
-            "type": "string"
+            "type": "string",
+            "description": "Water depth at which the animal was caught"
           },
           {
             "name": "capture_temperature_change",
-            "type": "string"
+            "type": "string",
+            "description": "Difference between water temperature of the system where the fish was caught and the water temperature of the holding reservoir"
           },
           {
             "name": "release_date_time",
-            "type": "datetime"
+            "type": "datetime",
+            "description": "Date and time that tagged animal was released, in UTC"
           },
           {
             "name": "release_location",
-            "type": "string"
+            "type": "string",
+            "description": "Name of release location. Please refer to a specific nearby point of land, town, island, or body of water that uniquely identifies this tagging location"
           },
           {
             "name": "release_latitude",
-            "type": "number"
+            "type": "number",
+            "description": "Latitude of release location. Note: in the southern hemisphere all latitudes must be negative"
           },
           {
             "name": "release_longitude",
-            "type": "number"
+            "type": "number",
+            "description": "Longitude of release location. Note: in the western hemisphere all longitudes must be negative"
           },
           {
             "name": "recapture_date_time",
-            "type": "datetime"
+            "type": "datetime",
+            "description": "If applicable, date of recapture of the tagged animal"
           },
           {
             "name": "length1_type",
-            "type": "string"
+            "type": "string",
+            "description": "Specify type of length recorded (e.g. hood length, fork length, standard length, etc.)"
           },
           {
             "name": "length1",
-            "type": "number"
+            "type": "number",
+            "description": "Length of animal that carries tag, depending on 'Length type', in units specified in 'Length units'"
           },
           {
             "name": "length1_unit",
-            "type": "string"
+            "type": "string",
+            "description": "Units of lenght"
           },
           {
             "name": "length2_type",
-            "type": "string"
+            "type": "string",
+            "description": "Specify type of secondary size measurement (e.g. width)"
           },
           {
             "name": "length2",
-            "type": "number"
+            "type": "number",
+            "description": "Secondary length measurement, depending on 'Length2 type', in units specified in 'Length2 units'"
           },
           {
             "name": "length2_unit",
-            "type": "string"
+            "type": "string",
+            "description": "Units of secondary length"
           },
           {
             "name": "length3_type",
-            "type": "string"
+            "type": "string",
+            "description": "Specify type of tertiary size measurement (e.g. width)"
           },
           {
             "name": "length3",
-            "type": "number"
+            "type": "number",
+            "description": "Tertiary length measurement, depending on 'Length3 type', in units specified in 'Length3 units'"
           },
           {
             "name": "length3_unit",
-            "type": "string"
+            "type": "string",
+            "description": "Units of tertiary length"
           },
           {
             "name": "length4_type",
-            "type": "string"
+            "type": "string",
+            "description": "Specify type of quaternary size measurement (e.g. width)"
           },
           {
             "name": "length4",
-            "type": "number"
+            "type": "number",
+            "description": "Quaternary length measurement, depending on 'Length4 type', in units specified in 'Length4 units'"
           },
           {
             "name": "length4_unit",
-            "type": "string"
+            "type": "string",
+            "description": "Units of quaternary length"
           },
           {
             "name": "weight",
-            "type": "number"
+            "type": "number",
+            "description": "Weight of animal that carries tag, in units specified in 'Weight units'"
           },
           {
             "name": "weight_unit",
-            "type": "string"
+            "type": "string",
+            "description": "Units of weight"
           },
           {
             "name": "age",
-            "type": "number"
+            "type": "number",
+            "description": "Age of animal that carries tag, the units are specified in 'Age units'"
           },
           {
             "name": "age_unit",
-            "type": "string"
+            "type": "string",
+            "description": "Units of age"
           },
           {
             "name": "sex",
-            "type": "string"
+            "type": "string",
+            "description": "Sex of animal. "M" or "F". Can enter unknown ("U")"
           },
           {
             "name": "life_stage",
