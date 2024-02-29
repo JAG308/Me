@@ -216,99 +216,123 @@
           },
           {
             "name": "life_stage",
-            "type": "string"
+            "type": "string",
+            "description": "Life stage of animal. This will depend on the species being studied and can be a standard code used for that species, a description, or both"
           },
           {
             "name": "wild_or_hatchery",
-            "type": "string"
+            "type": "string",
+            "description": "Origin of animal that carries the tag. Enter "wild","hatchery" or "unknown""
           },
           {
             "name": "stock",
-            "type": "string"
+            "type": "string",
+            "description": "Water body of origin. Can enter unknown or not applicable"
           },
           {
             "name": "surgery_date_time",
-            "type": "datetime"
+            "type": "datetime",
+            "description": "Date that surgery was conducted. Date fields should follow the ISO-8601 format"
           },
           {
             "name": "surgery_location",
-            "type": "string"
+            "type": "string",
+            "description": "	Short name of surgery location (i.e. hatchery name)"
           },
           {
             "name": "surgery_latitude",
-            "type": "number"
+            "type": "number",
+            "description": "Latitude of surgery location. Note: in the southern hemisphere all latitudes must be negative"
           },
           {
             "name": "surgery_longitude",
-            "type": "number"
+            "type": "number",
+            "description": "Longitude of surgery location. Note: in the western hemisphere all longitudes must be negative"
           },
           {
             "name": "treatment_type",
-            "type": "string"
+            "type": "string",
+            "description": Contains a designation of treatment group as appropriate for the particular study. Researchers will have to contact the authors directly for definitions. Try to make these as clear as possible (e.g. use Control instead of C, Lake release instead of Lake)"
           },
           {
             "name": "tagging_type",
-            "type": "string"
+            "type": "string",
+            "description": "Indicates how tag was attached to animal (e.g. "internal","external","oral","gastric","subcutaneous", etc.)"
           },
           {
             "name": "tagging_methodology",
-            "type": "string"
+            "type": "string",
+            "description": "Describe method and materials used to attach tag to animal"
           },
           {
             "name": "dna_sample",
-            "type": "string"
+            "type": "string",
+            "description": "Indicates whether the animal that carries the acoustic tag is also sampled for DNA"
           },
           {
             "name": "sedative",
-            "type": "string"
+            "type": "string",
+            "description": "Name of sedative used if applicable"
           },
           {
             "name": "sedative_concentration",
-            "type": "string"
+            "type": "string",
+            "description": "Concentration of sedative"
           },
           {
             "name": "anaesthetic",
-            "type": "string"
+            "type": "string",
+            "description": "Name of anaesthetic used if applicable"
           },
           {
             "name": "buffer",
-            "type": "string"
+            "type": "string",
+            "description": "Name of buffer used if applicable"
           },
           {
             "name": "anaesthetic_concentration",
-            "type": "string"
+            "type": "string",
+            "description": "Concentration of anaesthetic"
           },
           {
             "name": "buffer_concentration_in_anaesthetic",
-            "type": "string"
+            "type": "string",
+            "description": "Concentration of buffer in anaesthetic"
           },
           {
             "name": "anaesthetic_concentration_in_recirculation",
             "type": "string"
+            "description": "Concentration of anaesthetic in recirculation bath"
           },
           {
             "name": "buffer_concentration_in_recirculation",
-            "type": "string"
+            "type": "string",
+            "description": "Concentration of buffer in recirculation bath"
           },
           {
             "name": "dissolved_oxygen",
-            "type": "string"
+            "type": "string",
+            "description": "This measure is the lowest oxygen level the fish will experience during the surgery"
           },
           {
             "name": "pre_surgery_holding_period",
-            "type": "string"
+            "type": "string",
+            "description": "Time that animal is held prior to surgery"
           },
           {
             "name": "post_surgery_holding_period",
             "type": "string"
+            "description": "Time the animal is held after surgery until release"
           },
           {
             "name": "holding_temperature",
-            "type": "string"
+            "type": "string",
+            "description": "This measure is the highest or lowest water bath temperature the fish will experience during holding (depends if surgical water temperatures are increasing or decreasing relative to initial water temperature reading). For example, if tagging is being cond"
           },
           {
             "name": "comments",
-            "type": "string"
+            "type": "string",
+            "description": "Any comments deemed to have scientific relevance by the tagger"
           }
         ],
         "primaryKey": "animal_id",
@@ -345,11 +369,12 @@
           },
           {
             "name": "sensor_type",
-            "type": "string"
+            "type": "string",
+            "description": "Type of tag sensor. Predefined options: "P","T" or "A". P = pressure, T = temperature, A = acceleration"
           },
           {
             "name": "acoustic_tag_id",
-            "type": "string"
+            "type": "string",
           },
           {
             "name": "acoustic_tag_id_alternative",
@@ -357,35 +382,41 @@
           },
           {
             "name": "manufacturer",
-            "type": "string"
+            "type": "string",
+            "description": "Name of receiver manufacturer. Predefined options: "VEMCO","CHELONIA" or "THELMA BIOTEL""
           },
           {
             "name": "model",
-            "type": "string"
+            "type": "string",
           },
           {
             "name": "frequency",
-            "type": "string"
+            "type": "string",
+            "description": "Frequency at which the tag emits a signal"
           },
           {
             "name": "status",
-            "type": "string"
+            "type": "string",
+            "description": "Current status of the tag. Three options: "available","active" or "ended""
           },
           {
             "name": "activation_date",
-            "type": "datetime"
+            "type": "datetime",
+            "description": "Date and time the tag was activated, in UTC"
           },
           {
             "name": "battery_estimated_life",
-            "type": "string"
+            "type": "string",
+            "description": "Estimated duration of time during which the tag will be transmitting"
           },
           {
             "name": "battery_estimated_end_date",
-            "type": "datetime"
+            "type": "datetime",
+            "description": "Estimated date at which tag will stop transmitting. Date fields should follow the ISO-8601 format"
           },
           {
             "name": "length",
-            "type": "number"
+            "type": "number",
           },
           {
             "name": "diameter",
@@ -405,15 +436,18 @@
           },
           {
             "name": "sensor_slope",
-            "type": "number"
+            "type": "number",
+            "description": "Raw value of slope, as used for sensor calibration"
           },
           {
             "name": "sensor_intercept",
-            "type": "number"
+            "type": "number",
+            "description": "Raw value of intercept, as used for sensor calibration"
           },
           {
             "name": "sensor_range",
-            "type": "string"
+            "type": "string",
+            "description": "Maximum range of sensor"
           },
           {
             "name": "sensor_range_min",
@@ -429,19 +463,22 @@
           },
           {
             "name": "sensor_unit",
-            "type": "string"
+            "type": "string",
+            "description": "Unit of measured sensor value"
           },
           {
             "name": "sensor_accuracy",
-            "type": "number"
+            "type": "number",
           },
           {
             "name": "sensor_transmit_ratio",
-            "type": "integer"
+            "type": "integer",
+            "description": "Ratio of transmission between sensors present. If for example both a T and P sensor are present and T transmits twice as often as P, the range is 2 to 1"
           },
           {
             "name": "accelerometer_algorithm",
-            "type": "string"
+            "type": "string",
+            "description": "There are two possible modes of operation of the accelerometer algorithm: Activity or Tailbeat"
           },
           {
             "name": "accelerometer_samples_per_second",
